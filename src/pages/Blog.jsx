@@ -10,6 +10,7 @@ const Blog = () => {
   const {id} = useParams()
   const location = useLocation()
   const post = location.state
+  document.title = post.title
   return (
     <div className='p-5'>
       <Input />
@@ -25,8 +26,8 @@ const Blog = () => {
       <main>
         <div className='text-primaryColor text-[11px] bg-gray-200 py-3'>
           Trang chủ{'>'} Blog {'>'} Chia sẻ kinh nghiệm {'>'} {post.title}</div>
-        <div className='grid grid-cols-4 gap-3 mt-8'>
-          <article className='col-span-3'>
+        <div className='grid grid-cols-4 gap-3 mt-8 max-md:grid-cols-1'>
+          <article className='col-span-3 max-md:col-span-1'>
             <Heading>{post.title}</Heading>
             <p className='mt-8'>{post.content}</p>
             <div className='mt-4 bg-[#F5F5F5] rounded-[20px] p-5'>
@@ -43,8 +44,8 @@ const Blog = () => {
               </ol>
             </div>
             <img src={post.img} alt="post" className='mt-5' />
-            <p>{post.content}</p>
-            <p>{post.content}</p>
+            <p className='mt-8'>{post.content}</p>
+            <p className='mt-8 mb-3'>{post.content}</p>
           </article>
           <AsideBanerBlog />
         </div>

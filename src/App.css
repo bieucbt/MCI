@@ -72,3 +72,15 @@ img.logo {
     transform: rotate(-10deg);
   }
 }
+
+/* animation form login */
+.animation-show-FromLogin{
+  animation: showLogin 1s 1 linear forwards;
+}
+
+@keyframes showLogin{
+  to{
+    top: 50%;
+    opacity: 1;
+  }
+}

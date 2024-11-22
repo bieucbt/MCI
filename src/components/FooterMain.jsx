@@ -4,8 +4,8 @@ import Heading from './Heading';
 
 const FooterMain = () => {
   return (
-    <div className='flex text-[#F5F5F5] max-lg:flex-wrap'>
-      <div className='flex '>
+    <div className='flex text-[#F5F5F5] max-lg:flex-wrap ml-5 gap-5'>
+      <div className='flex gap-5'>
         {
           Contact.map((item, i) => <div key={i}>
             <Heading className={'text-white'}

@@ -6,8 +6,8 @@ import { asideBlog, dataSelectForm } from '../data/asideBlog'
 const AsideBanerBlog = () => {
   return (
     <aside>
-      <img src={blogDetailBanner} alt="" />
-      <div>
+      <img src={blogDetailBanner} alt="banner" className='mx-auto' />
+      <div className='mt-3'>
         <Heading cssHr={'w-[169px]'}>Các khóa học</Heading>
         <ul>
           {
@@ -18,7 +18,7 @@ const AsideBanerBlog = () => {
         </ul>
       </div>
       <form className='bg-primaryColor rounded-md p-3 text-white flex 
-      flex-col gap-3'>
+      flex-col gap-3 mt-4'>
         <h3 className='text-[20px] font-bold  text-center'>ĐĂNG KÝ TƯ VẤN <br></br>
         KHÓA HỌC</h3>
         <div>
@@ -37,7 +37,7 @@ const AsideBanerBlog = () => {
           className='w-full p-1 text-black'required />
         </div>
         <div>
-          <select name="course" className='w-full text-black'>
+          <select name="course" className='w-full text-black p-2'>
             {
               dataSelectForm.map((opt, i) => <option key={i}>{opt}</option>)
             }

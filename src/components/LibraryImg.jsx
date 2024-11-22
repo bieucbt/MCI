@@ -6,7 +6,7 @@ const LibraryImg = () => {
   return (
     <section className='bg-[#F0F0F0] p-9'>
       <div className='flex justify-center'>
-        <Heading>Thư viện ảnh</Heading>
+        <Heading cssHr={'w-[160px]'}>Thư viện ảnh</Heading>
       </div>
       <div className='grid grid-cols-3 mt-5 max-lg:grid-cols-2'>
         <img src={rectangle1} alt="img" className='col-span-2 rounded-md' />

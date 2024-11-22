@@ -9,7 +9,7 @@ import Input from './Input';
 const Post = () => {
 
   return (
-    <div>
+    <div className='mt-5'>
       <Heading>Bài viết mới nhất</Heading>
       <Input />
       <div className=' grid grid-cols-4 gap-6 max-lg:grid-cols-2 max-md:grid-cols-1'>

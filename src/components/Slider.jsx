@@ -23,7 +23,7 @@ const Slider = () => {
           modules={[Pagination]}
           loop={true}
           navigation={{ nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }}
-          className="mySwiper"
+          className="mySwiper mt-5"
         >
           <SwiperSlide><img src={landscape1} className='w-full h-full object-cover' alt="img" /></SwiperSlide>
           <SwiperSlide><img src={landscape2} className='w-full h-full object-cover' alt="img" /></SwiperSlide>
@@ -33,15 +33,8 @@ const Slider = () => {
           <SwiperSlide><img src={landscape2} className='w-full h-full object-cover' alt="img" /></SwiperSlide>
           <SwiperSlide><img src={landscape3} className='w-full h-full object-cover' alt="img" /></SwiperSlide>
           <SwiperSlide><img src={landscape4} className='w-full h-full object-cover' alt="img" /></SwiperSlide>
-          <div>
-            <button >next</button>
-            <button>prev</button>
-          </div>
       </Swiper>
-      <div className='w-full bg-black'>
-        <div className="swiper-button-prev bg-white">Previous</div>
-        <div className="swiper-button-next bg-white">Next</div>
-      </div>
+      
     </>
   )
 }

@@ -5,10 +5,12 @@ import LibraryImg from '../components/LibraryImg'
 import Training from '../components/Training'
 
 const Home = () => {
+  document.title = 'Home'
   return (
-    <div>
+    <div >
       <Banner />
-      <main className='max-w-[960px] m-auto flex flex-col gap-5 px-5'>
+      <main className='max-w-[1200px] m-auto flex flex-col gap-5 px-5
+      mt-5'>
           <Event />
           <LibraryImg />
           <Training />

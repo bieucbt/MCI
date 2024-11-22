@@ -15,7 +15,7 @@ const Header = () => {
   return (
     <header className='flex items-center justify-between p-[10px] bg-main
     text-white sticky z-50 top-0'>
-      {loginForm && <FromLogin setLoginForm={setLoginForm} />}
+      {loginForm && <FromLogin setLoginForm={setLoginForm} loginForm={loginForm} />}
       <div className='flex items-center'>
         <Link to='/'><img src={logo} alt="logo" width={200} height={90} className='logo' /></Link>
         <nav className='relative'>
